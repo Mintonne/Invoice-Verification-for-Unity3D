@@ -1,0 +1,133 @@
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+}
+
+#header {
+    margin: 0;
+    padding: 15px 0;
+}
+
+#main-title {
+    margin: 0;
+    color: #000;
+}
+
+#settings-button {
+    padding-left: 35px;
+    position: absolute;
+}
+
+.card {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.input-field:not(:first-child) {
+    margin-bottom: 0;
+}
+
+.input-field a {
+    /* margin-bottom: 14px; */
+    display: inline-block;
+}
+
+[type="checkbox"].filled-in:checked+span:not(.lever):after {
+    background-color: #03A9F4;
+    border-color: #03A9F4;
+}
+
+#settings-section, #results-section {
+    display: none;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+p {
+    font-weight: bold;
+    padding: 2px 0;
+}
+
+#error-section {
+    display: none;
+}
+
+
+/* Spinner */
+
+.lds-ellipsis {
+    display: none;
+    /* display: inline-block; */
+    position: relative;
+    width: 64px;
+    height: 36px;
+}
+
+.lds-ellipsis div {
+    position: absolute;
+    top: 27px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #03A9F4;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 6px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 6px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 26px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 45px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(19px, 0);
+    }
+}

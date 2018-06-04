@@ -1,0 +1,14 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato'), local('Lato'), url(../css/fonts/Lato-Regular.ttf) format('truetype');
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato'), local('Lato'), url(../css/fonts/Lato-Regular.ttf) format('truetype');
+}
