@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Verify Invoice</title>
+    <link rel="stylesheet" type="text/css" href="vendor/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="vendor/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <h5 id="main-title">
+            <span>Unity3D Invoice Verification</span>
+            <a id="settings-button"><i class="icon-options"></i></a>
+        </h5>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <div id="input-section">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="invoice-input" type="text" class="validate" value="" maxlength="40">
+                        <label for="invoice-input">Invoice Number</label>
+                        <!-- Saved for later use -->
+                        <!-- <a id="a-link" href="javascript:void(0);">A Link</a> -->
+                    </div>
+                    <a id="verify-button" class="waves-effect waves-light btn light-blue"> <i class="icon-checkmark"></i> Verify</a>
+                    <div class="lds-ellipsis" id="spinner">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div id="settings-section">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="api-input" type="text" class="validate" value="" maxlength="40">
+                        <label for="api-input">API Key</label>
+                        <a id="api-link" href="https://publisher.assetstore.unity3d.com/verify-invoice.html" target="_blank">Get API Key</a>
+                    </div>
+                    <!-- Enable or disable context menu option. -->
+                    <!-- <label id="enable-context"><input type="checkbox" class="filled-in" checked="checked" /><span>Enable Context Menu Option</span></label> -->
+                    <a id="save-button" class="waves-effect waves-light btn light-blue"> <i class="icon-save"></i> Save</a>
+                    <a id="back-button" class="waves-effect waves-light btn red darken-1"> <i class="icon-arrow-left"></i> Back</a>
+                    <div class="lds-ellipsis" id="spinner">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div id="results-section">
+                <hr>
+                <div class="row">
+                    <h5 id="package-name">A Nice Asset</h5>
+                    <p>Purchased on</p>
+                    <span id="package-date">2018-01-01</span>
+                    <br>
+                    <p>Total Price (Excl. VAT)</p>
+                    <span id="package-cost">40</span> <span id="package-currency">USD</span>
+                    <br>
+                    <p>Quantity </p>
+                    <span id="package-quantity">1</span>
+                    <br>
+                    <p>Status</p>
+                    <span title="The customer has at least one license from another purchase. Refund required if requested within 14 days of purchase." id="package-status">Downloaded</span>
+                </div>
+            </div>
+            <div id="error-section">
+                <hr>
+                <div class="row">
+                    <h5 id="error-title">Error!</h5>
+                    <p id="error-message"></p>
+                    <br>
+                    <a href="https://publisher.assetstore.unity3d.com/verify-invoice.html" target="_blank" class="waves-effect waves-light btn light-blue" rel="noopener">Publisher Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="vendor/js/moment.js" type="application/javascript"></script>
+    <script src="js/popup.js" type="application/javascript"></script>
+</body>
+
+</html>
