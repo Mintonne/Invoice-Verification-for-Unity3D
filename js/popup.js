@@ -98,7 +98,7 @@ function goMainMenu() {
 
 //API fetch
 function getJson(apiKey) {
-    let url = `http://api.assetstore.unity3d.com/publisher/v1/invoice/verify.json?key=${apiKey}&invoice=${invoiceInput.value}`;
+    let url = `https://api.assetstore.unity3d.com:443/publisher/v1/invoice/verify.json?key=${apiKey}&invoice=${invoiceInput.value}`;
 //   let url = "sample.json";
 
   fetch(url)
