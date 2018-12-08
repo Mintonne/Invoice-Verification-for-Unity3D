@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Invoice</title>
+
+    <link rel="stylesheet" type="text/css" href="vendor/myicons/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <h3>
+            <span id="title">Invoice Verification</span>
+            <i id="back-button" class="changeVisibility icon-left"></i>
+            <i id="settings-button" class="changeVisibility active icon-cog"></i>
+        </h3>
+    </div>
+
+    <hr>
+
+    <div id="homepage" class="changeDisplay active">
+        <div class="input-group">
+            <input id="invoice-input" type="text" autocomplete="off">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Invoice Number</label>
+        </div>
+
+        <button id="verify-button" class="btn">Verify Invoice</button>
+
+        <div id="invoice-result">
+            <h2 id="package-name" class="text-dark mb-3">An Amazing Asset</h2>
+
+            <h4 class="text-dark mb-1">Purchased On</h4>
+            <p id="purchase-date" class="mb-2">2018-09-30</p>
+
+            <h4 class="text-dark mb-1">Price (Excl. VAT)</h4>
+            <p id="purchase-price" class="mb-2">50.00 USD</p>
+
+            <h4 class="text-dark mb-1">Quantity</h4>
+            <p id="purchase-licenses" class="mb-2">5 Licenses</p>
+
+            <h4 class="text-dark mb-1">Status</h4>
+            <p id="purchase-status">Refunded</p>
+        </div>
+    </div>
+
+    <div id="settings" class="changeDisplay">
+        <div class="input-group">
+            <input id="apikey-input" type="text" autocomplete="off">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>API Key</label>
+        </div>
+
+        <button id="save-button" class="btn">Save</button>
+
+        <br><br>
+
+        <a href="https://publisher.assetstore.unity3d.com/verify-invoice.html" target="noopener">Get API Key</a>
+    </div>
+
+    <script type="text/javascript" src="js/keys.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
