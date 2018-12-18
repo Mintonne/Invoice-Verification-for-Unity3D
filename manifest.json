@@ -1,10 +1,10 @@
 {
-    "name": "Unity3D Invoice Verification",
+    "name": "Invoice Verification for Unity3D",
     "short_name": "Invoice Verification",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "manifest_version": 2,
     "description": "Verify Unity3D invoices in a snap.",
-    "homepage_url": "https://bitbucket.org/Mintonne/unity3d-invoice-verification-extension",
+    "homepage_url": "https://github.com/Mintonne/Invoice-Verification-for-Unity3D",
     "author": "Mintonne",
     "icons": {
         "16": "icons/icon16.png",
